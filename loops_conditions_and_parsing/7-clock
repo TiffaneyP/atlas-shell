@@ -1,22 +1,15 @@
 #!/usr/bin/env bash
 #this script will display the time for 12 hours and 59 minutes.
-i=0
+i=1
 h=0
-while [ $i -le 1440; $h -le 12 ];
+while [ $h -le 12 ]
 do
-	i=$(( i+1 ))
-	if [[ $i = 0 ]];
-	then echo "Hour: 0";
-	elif [[ i = 60 ]]; then
-	echo "Hour: 1";
-	elif [[ $i = 120 ]]; then
-	echo "Hour: 2";
-		elif [[ $i = 180 ]]; then
-	echo  "Hour: 3";
-		elif [[ $i = 240 ]]; then
-	echo "Hour: 4";
-		elif [[ $i = 300 ]]; then
-	echo "Hour: 5";
-	else echo "$i";
-	fi
+	echo "Hour: $h"
+	while [ $i -le 59 ]
+		do
+		echo "$i"
+		i=$(( i+1 ))
+		done
+	i=1
+	h=$(( h+1 ))
 done
