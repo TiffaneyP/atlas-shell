@@ -4,7 +4,7 @@ for i in {1..100}
 do
 	j=$(( i%3 ))
 	k=$(( i%5 ))
-	if [ $j -eq 0 ] %% [ $k -eq 0 ]
+	if [ $j -eq 0 ] && [ $k -eq 0 ]
 	then
 		echo "FizzBuzz"
 	elif [ $j -eq 0 ]
@@ -15,6 +15,6 @@ do
 		echo "Buzz"
 	else
 		echo $i
-	fu
+	fi
 	i=$(( i+1 ))
 done
