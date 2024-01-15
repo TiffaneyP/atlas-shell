@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This script will display "Best School" 10 times.
+#until loops through Best School 10 times
 i=11
 until [ $i==1 ]
 do
