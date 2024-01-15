@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #until loops through Best School 10 times
 i=11
-until [ $i==1 ]
+until [ $i == 1 ]
 do
 	echo "Best School"
 	i=$((i-1))
