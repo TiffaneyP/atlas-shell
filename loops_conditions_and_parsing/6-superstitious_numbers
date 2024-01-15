@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#this script will display numbers from 1 to 20
+#use a while loop to count up to 20 with a bunch of cases.
 i=1
 while [ $i -le 20 ];
 do
