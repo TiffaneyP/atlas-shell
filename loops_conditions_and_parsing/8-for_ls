@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#content of the current directory
+for fname in *
+do
+	nameWithoutNum=${fname#*-}
+	echo "${nameWithoutNum}"
+done
